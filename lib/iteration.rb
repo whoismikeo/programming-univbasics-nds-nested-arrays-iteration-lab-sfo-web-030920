@@ -37,11 +37,12 @@ def total_even_pairs(src)
   # As a reminder any number % 2 will return 0 or 1. If the result is 0, then
   # the number was even. Review the operator documentation if you've forgotten
   # this!
-  strings = []
+  totes = 0
   index = 0
   while index < src.length do
     num1_even = src[index][0] % 2
-    if
+    num2_even = src[index][1] % 2
+    if num1_even == true && num2_even == true
     strings.push("I love #{src[index][0]} and #{src[index][1]} on my pizza")
     index += 1
   end
