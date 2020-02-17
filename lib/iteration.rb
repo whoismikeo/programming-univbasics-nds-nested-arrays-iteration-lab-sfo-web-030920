@@ -42,7 +42,7 @@ def total_even_pairs(src)
   while index < src.length do
     num1_even = src[index][0] % 2
     num2_even = src[index][1] % 2
-    if num1_even == true && num2_even == true 
+    if num1_even == 0 && num2_even == 0
       totes += src[index][0]
       totes += src[index][1]
     end
